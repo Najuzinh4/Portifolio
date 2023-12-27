@@ -7,6 +7,7 @@
         <title>Portfólio | Ana Júlia Gaspar</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://cdn.tailwindcss.com"></script>
         <link
         rel="icon"
         type="image/x-icon"
@@ -27,8 +28,45 @@
     </head>
 
 
-<body>
-    <main>
+    <body onload="typeWriter(fName);">
+        <div>
+            <!-- menu -->
+            <input
+                id="close-menu"
+                class="close-menu"
+                type="checkbox"
+                aria-label="close-menu"
+                role="button"
+            />
+            <label
+                class="close-menu-label"
+                for="close-menu"
+                title="close menu"
+            ></label>
+            <div class="barra">
+                <div class="menu-centro">
+                    <div class="barra-conteiner centralizador">
+                        <div class="logo esquerda">
+                            <a href="index.html"
+                                ><img src="/assets/img/logo.png" alt="logo"
+                            /></a>
+                        </div>
+                        <nav class="direita">
+                            <ul
+                                onclick="getElementById('close-menu').checked=false;"
+                            >
+                                <li><a href="#inicio">Início</a></li>
+                                <li><a href="#sobre-mim">Sobre mim</a></li>
+                                <li><a href="#projetos">Projetos</a></li>
+                                <li><a href="#curriculo">Currículo</a></li>
+                                <li><a href="#habilidades">Habilidades</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- menu -->
+                
    <!-- primeira tela -->
    <section id="inicio">
     <div class="altura-ajuste">
@@ -55,12 +93,14 @@
                         >
                     </div>
                 </div>
-                <div class="eu">
-                    <img
-                        class="fotominhaoudesenho"
-                        src="/img/Image"
-                        alt="eu"
-                    />
+                <div class="card">
+                    <div class="imgbox">
+                        <div class="img"></div>
+                    </div>
+                    <div class="details">
+                        <h2 class="title">Ana Júlia</h2>
+                        <span class="caption">Developer</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,9 +180,153 @@
     </div>
 </section>
 <!-- Projetos -->
+<!-- Currículo -->
+<section id="curriculo-section">
+    <header>
+        <h2>Meu Currículo</h2>
+    </header>
+    <article>
+        <p>Aqui está o meu currículo para download:</p>
+    </article>
+    <div class="relative duration-500 hover:-rotate-0 group [transform:rotate3d(1,-1,1,60deg)] border border-purple-900 border-4 overflow-hidden rounded-2xl relative h-96 w-64 bg-purple-800 p-5 flex flex-col items-center justify-center gap-4 mx-auto">
+        <div class="text-gray-50 text-center">
+            <span class="font-bold text-5xl">Jr</span>
+            <p class="text-xs">Frontend Developer</p>
+        </div>
+        <button class="duration-300 hover:bg-purple-900 border hover:text-gray-50 bg-gray-50 font-semibold text-purple-800 px-3 py-2 flex flex-row items-center gap-3">Download CV 
+            <svg class="w-6 h-6 fill-current" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+                <path d="M22.1,77.9a4,4,0,0,1,4-4H73.9a4,4,0,0,1,0,8H26.1A4,4,0,0,1,22.1,77.9ZM35.2,47.2a4,4,0,0,1,5.7,0L46,52.3V22.1a4,4,0,1,1,8,0V52.3l5.1-5.1a4,4,0,0,1,5.7,0,4,4,0,0,1,0,5.6l-12,12a3.9,3.9,0,0,1-5.6,0l-12-12A4,4,0,0,1,35.2,47.2Z" fill-rule="evenodd">
+                </path>
+            </svg>
+        </button>
+    
+        <svg class="group-hover:scale-125 duration-500 absolute -bottom-0.5 -right-20 w-48 h-48 z-10 -my-2 fill-gray-50 stroke-purple-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path data-name="layer1" d="M 50.4 51 C 40.5 49.1 40 46 40 44 v -1.2 a 18.9 18.9 0 0 0 5.7 -8.8 h 0.1 c 3 0 3.8 -6.3 3.8 -7.3 s 0.1 -4.7 -3 -4.7 C 53 4 30 0 22.3 6 c -5.4 0 -5.9 8 -3.9 16 c -3.1 0 -3 3.8 -3 4.7 s 0.7 7.3 3.8 7.3 c 1 3.6 2.3 6.9 4.7 9 v 1.2 c 0 2 0.5 5 -9.5 6.8 S 2 62 2 62 h 60 a 14.6 14.6 0 0 0 -11.6 -11 z" stroke-miterlimit="10" stroke-width="5"></path></svg>
+    
+        <svg class="group-hover:scale-125 duration-200 absolute -bottom-0.5 -right-20 w-48 h-48 z-10 -my-2 fill-gray-50 stroke-purple-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path data-name="layer1" d="M 50.4 51 C 40.5 49.1 40 46 40 44 v -1.2 a 18.9 18.9 0 0 0 5.7 -8.8 h 0.1 c 3 0 3.8 -6.3 3.8 -7.3 s 0.1 -4.7 -3 -4.7 C 53 4 30 0 22.3 6 c -5.4 0 -5.9 8 -
+  
+</div>
+</section>
+<!-- Currículo -->
 
+<!-- Habilidades -->
+<section id="habilidades">
+    <div class="centralizador">
+        <div class="habilidades-pd">
+            <h2 class="project">Habilidades</h2>
+            <div class="skills-descricao">
+                <div class="conteiner-skills">
+                    <div class="skill-box skill1 html-skill">
+                        <img
+                            class="icones-habilidades"
+                            src="img/1.png"
+                            alt="html-icon"
+                        />
+                    </div>
+                    <div class="skill-box skill2 css-skill">
+                        <img
+                            class="icones-habilidades"
+                            src="img/2.png"
+                            alt="css-icon"
+                        />
+                    </div>
+                    <div class="skill-box skill3 js-skill">
+                        <img
+                            class="icones-habilidades"
+                            src="img/3.png"
+                            alt="js-icon"
+                        />
+                    </div>
+
+                    <div class="skill-box skill7">
+                        <img
+                            class="icones-habilidades"
+                            src="img/4.png"
+                            alt="c#-icon"
+                        />
+                    </div>
+                    <div class="skill-box skill8">
+                        <img
+                            class="icones-habilidades"
+                            src="img/php.png"
+                            alt="php-icon"
+                        />
+                    </div>
+                    <div class="skill-box skill13 sass-skill">
+                        <img
+                            class="icones-habilidades"
+                            src="img/java.png"
+                            alt="java-icon"
+                        />
+                    </div>
+                    <div class="skill-box skill9 git-skill">
+                        <img
+                            class="icones-habilidades"
+                            src="img/sql-server.png"
+                            alt="SQL-icon"
+                        />
+                    </div>
+                    <div class="skill-box skill10 github-skill">
+                        <img
+                            class="icones-habilidades"
+                            src="img/5.png"
+                            alt="github-icon"
+                        />
+                    </div>
+                </div>
+                <div class="conteiner-descricao">
+                    <p class="texto-descricao">
+                         Passe o mouse por cima de alguma
+                        habilidade para ler a descrição :)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Habilidades -->
+
+ <!-- footer -->
+ <footer class="footer">
+    <div class="footer-conteiner">
+        <div class="contato-creditos">
+            E-mail para contato: julinha.10733@gmail.com
+            <br />
+          Feito por Ana Júlia Rocha Gaspar
+        </div>
+        <div class="icons">
+            <div class="links links1">
+                <a
+                    href="https://github.com/Najuzinh4?tab=repositories"
+                    target="_blank"
+                >
+                    <img
+                        class="transparente"
+                        src="img/github.png"
+                        alt="github-icon"
+                    />
+                </a>
+            </div>
+            <div class="links links2">
+                <a
+                    href="https://www.linkedin.com/in/ana-júlia-gaspar-96a749209/"
+                    target="_blank"
+                >
+                    <img
+                        class="transparente"
+                        src="/img/linkedln.png"
+                        alt="github-icon"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
 </main>
-    <footer></footer>
-</body>
 
+</body>
+</footer>
+<!-- footer -->
+</div>
+<script src="./scroll.js"></script>
+<script src="./maquina_escrever.js"></script>
+<script src="./habilidades.js"></script>
 </html>

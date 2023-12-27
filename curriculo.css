@@ -1,0 +1,30 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#curriculo-section {
+  background-color: #e79fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#curriculo-section p {
+  margin-bottom: 20px; /* Ajuste o espaçamento conforme necessário */
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+button {
+  background-color: #6c0094;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #46025f;
+}

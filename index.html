@@ -14,18 +14,23 @@
         href="/assets/img/ms-icon-310x310.png"
     />
     <!-- Navegação e início -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Sobre mim -->
-    <link rel="stylesheet" href="sobre-mim.css" />
+    <link rel="stylesheet" href="css/sobre-mim.css" />
     <!-- Projetos -->
-    <link rel="stylesheet" href="projetos.css" />
+    <link rel="stylesheet" href="css/projetos.css" />
     <!-- Habilidades -->
-    <link rel="stylesheet" href="habilidades.css" />
+    <link rel="stylesheet" href="css/habilidades.css" />
     <!-- Currículo -->   
-    <link rel="stylesheet" href="curriculo.css" />
+    <link rel="stylesheet" href="css/curriculo.css" />
     <!-- footer -->
-    <link rel="stylesheet" href="footer.css" />  
+    <link rel="stylesheet" href="css/footer.css" />  
+     <!-- botao -->
+    <link rel="stylesheet" href="css/botao.css" /> 
+    <!-- piramide -->
+    <link rel="stylesheet" href="css/piramide.css" /> 
     </head>
+    
 
 
     <body onload="typeWriter(fName);">
@@ -58,7 +63,7 @@
                                 <li><a href="#inicio">Início</a></li>
                                 <li><a href="#sobre-mim">Sobre mim</a></li>
                                 <li><a href="#projetos">Projetos</a></li>
-                                <li><a href="#curriculo">Currículo</a></li>
+                                <li><a href="#curriculo-section">Currículo</a></li>
                                 <li><a href="#habilidades">Habilidades</a></li>
                             </ul>
                         </nav>
@@ -84,14 +89,20 @@
                         Desenvolvedora Full Stack
                     </p>
                     <br />
-                    <div class="linkedin">
-                        <a
-                            href="https://www.linkedin.com/in/ana-júlia-gaspar-96a749209/"
-                            target="_blank"
-                            class="link"
-                            >Linkedin</a
-                        >
-                    </div>
+
+                    <a href="https://www.linkedin.com/in/ana-júlia-gaspar-96a749209/" target="_blank"></a>
+                    <button class="btn" type="button">
+                        <strong>LINKEDIN</strong>
+                        <div id="container-stars">
+                          <div id="stars"></div>
+                        </div>
+                
+                        <div id="glow">
+                          <div class="circle"></div>
+                          <div class="circle"></div>
+                        </div>
+                    </button>
+
                 </div>
                 <div class="card">
                     <div class="imgbox">
@@ -113,12 +124,16 @@
 <section id="sobre-mim">
     <div class="centralizador">
         <div class="ajustador-2">
-            <div class="avatar">
-                <img
-                    class="desenho-bg"
-                    src="/img/avatar.png"
-                    alt="avatar"
-                />
+
+            <div class="pyramid-loader">
+                <div class="wrapper">
+                  <span class="side side1"></span>
+                  <span class="side side2"></span>
+                  <span class="side side3"></span>
+                  <span class="side side4"></span>
+                  <span class="shadow"></span>
+                </div>  
+              </div> 
             </div>
             <div class="sobre-mim">
                 <h2>Sobre mim</h2>
@@ -134,9 +149,7 @@
                 </p>
                 <br />
                 <p>
-                   Minhas especializações/Linguagens: C | C# | C++ | Java | HTML5 | Php | JavaScript | CSS | EntityFrameWorkCore. Pacote Office avançado: Acess, Power Point, Excel e Word.
-                   Listening,Reading and writing fluent in British English.
-                   Desenvolvimento e edição de vídeo e áudio avançado.
+                Minhas especializações/Linguagens: C | C# | C++ | Java | HTML5 | Php | JavaScript | CSS | EntityFrameWorkCore. Pacote Office avançado.
                 </p>
             </div>
         </div>
@@ -171,11 +184,7 @@
 
         <div class="github-link">
             <button>Ver mais</button>
-            <a
-                href="https://github.com/Najuzinh4?tab=repositories"
-                target="_blank"
-                >Repositórios no github</a
-            >
+            <button class="glow-on-hover" type="button" onclick="window.open('https://github.com/Najuzinh4?tab=repositories', '_blank')">Repositórios no GitHub</button>
         </div>
     </div>
 </section>
@@ -207,6 +216,7 @@
 </section>
 
 <!-- Currículo -->
+
 <!-- Habilidades -->
 <section id="habilidades">
     <div class="centralizador">
@@ -325,7 +335,7 @@
 </footer>
 <!-- footer -->
 </div>
-<script src="./scroll.js"></script>
-<script src="./maquina_escrever.js"></script>
+<!-- <script src="./scroll.js"></script>
+<script src="./maquina_escrever.js"></script> -->
 <script src="./habilidades.js"></script>
 </html>

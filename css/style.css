@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
- color: rgb(208, 255, 0);
+ color: rgb(255, 160, 216);
 }
 
 img {
@@ -433,41 +433,7 @@ img {
     color: white;
   }
   
-  
-  
-  .avatar {
-    width: 323px;
-    height: 368px;
-    position: relative;
-    cursor: pointer;
-    transition: ease 1s;
-  }
-  
-  .avatar:hover {
-    transform: scale(1.05);
-  }
-  
-  @keyframes html {
-    0% {
-        bottom: 0;
-        left: 250px;
-    }
-    100% {
-        bottom: 0;
-        left: 50px;
-    }
-  }
-  
-  @keyframes css {
-    0% {
-        bottom: 0;
-        left: 50px;
-    }
-    100% {
-        bottom: 0;
-        left: 250px;
-    }
-  }
+ 
   
   .html {
     bottom: 0;
@@ -505,10 +471,7 @@ img {
         text-align: center;
     }
   
-    .avatar {
-        margin-right: 60px;
-    }
-  
+   
     h2 {
         font-size: 30px;
     }

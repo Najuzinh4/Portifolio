@@ -1,7 +1,7 @@
 .pyramid-loader {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 100%; 
+  height: auto; 
   display: block;
   transform-style: preserve-3d;
   transform: rotateX(-20deg);
@@ -21,11 +21,10 @@
   }
 }
 
+
 .pyramid-loader .wrapper .side {
   width: 70px;
   height: 70px;
-/* you can choose any gradient or color you want */
-  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
   position: absolute;
   top: 0;
   left: 0;

@@ -452,47 +452,58 @@ img {
     animation: css 3s infinite linear alternate-reverse;
   }
   
-  .sobre-mim{
+  .sobre-mim {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .sobre-mim p {
+}
+
+.sobre-mim h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.sobre-mim p {
     text-indent: 30px;
     font-size: 20px;
     max-width: 609.25px;
     color: white;
+}
+
+.ajustador-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pyramid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
   }
-  
-  @media (max-width:1200px) {
+
+@media (max-width: 1200px) {
     .ajustador-2 {
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
     }
-  
-   
-    h2 {
+
+    .sobre-mim h2 {
         font-size: 30px;
     }
-  
-    .ajustador-2 p {
-        font-size: 15px;
-    }
+
     .sobre-mim p {
+        font-size: 15px;
         text-indent: 0;
     }
-  }
+}
   
   @media(max-width:950px){
   
     .circulo {
         display: none;
     }
-    .ajustador-2 {
-        max-width: 350px;
-        padding: 70px 30px;
-    }
+   
   
     .avatar {
         margin-right: 0;

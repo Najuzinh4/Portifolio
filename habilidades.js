@@ -35,3 +35,12 @@ skills.forEach(  (elemento, index) => {
         descricao.innerHTML = 'Passe o mouse por cima de alguma habilidade para ler a descrição :)';
     } )
 } );
+
+document.getElementById('downloadButton').onclick = function() {
+    // Cria um elemento <a> para o download
+    var link = document.createElement('a');
+    link.href = 'caminho-para-o-seu-curriculo.pdf'; // Substitua pelo caminho do seu arquivo PDF
+    link.download = 'seu-curriculo.pdf'; // Substitua pelo nome do seu arquivo PDF
+    link.click(); // Simula um clique no link para iniciar o download
+  }
+  

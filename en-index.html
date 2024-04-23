@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,28 +9,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- Navegação e início -->
+    <!-- Navigation and start -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Sobre mim -->
+    <!-- About me -->
     <link rel="stylesheet" href="css/sobre-mim.css" />
-    <!-- Projetos -->
+    <!-- Projects -->
     <link rel="stylesheet" href="css/projetos.css" />
-    <!-- Habilidades -->
+    <!-- Skills -->
     <link rel="stylesheet" href="css/habilidades.css" />
-    <!-- Currículo -->  
+    <!-- Resume -->
     <link rel="stylesheet" href="css/curriculo.css" />
-    <!-- English -->  
     <!-- footer -->
     <link rel="stylesheet" href="css/footer.css" />  
-     <!-- botao -->
+     <!-- Button -->
     <link rel="stylesheet" href="css/botao.css" /> 
-    <!-- piramide -->
+    <!-- Pyramid -->
     <link rel="stylesheet" href="css/piramide.css" /> 
     </head>
-    
 
-
-    <body onload="typeWriter(fName);">
+ <body onload="typeWriter(fName);">
         <div>
             <!-- menu -->
             <input
@@ -60,33 +57,33 @@
                             <ul
                                 onclick="getElementById('close-menu').checked=false;"
                             >
-                                <li><a href="#inicio">Início</a></li>
-                                <li><a href="#sobre-mim">Sobre mim</a></li>
-                                <li><a href="#projetos">Projetos</a></li>
-                                <li><a href="#curriculo-section">Currículo</a></li>
-                                <li><a href="#habilidades">Habilidades</a></li>
+                                <li><a href="#inicio">Home</a></li>
+                                <li><a href="#sobre-mim">About Me</a></li>
+                                <li><a href="#projetos">Projects</a></li>
+                                <li><a href="#curriculo-section">Resume</a></li>
+                                <li><a href="#habilidades">Skills</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
             <!-- menu -->
-                
-   <!-- primeira tela -->
-   <section id="inicio">
+
+ <!-- first screen -->
+ <section id="inicio">
     <div class="altura-ajuste">
         <div class="inicio centralizador">
             <div class="ajustador organizador">
                 <div class="apresentacao">
                     <p class="descricao">
-                        Oi, eu sou <br />
+                        Hi, I am <br />
                         <span
                             style="display: inline"
                             class="meu-nome"
                             >Ana Júlia Gaspar</span
                         >
                         <br />
-                        Desenvolvedora Full Stack
+                        Full Stack Developer
                     </p>
                     <br />
 
@@ -116,28 +113,29 @@
         </div>
     </div>
 </section>
-<!-- primeira tela -->
+<!-- first screen -->
 
-
-<!-- sobre mim -->
+<!-- About Me -->
 <section id="sobre-mim">
     <div class="centralizador">
         <div class="ajustador-2">
             <div class="sobre-mim">
-                <h2>Sobre mim</h2>
+                <h2>About me</h2>
                 <br />
                 <p>
-                    Sobre mim: Tenho 21 anos, sou técnica de informática e desenvolvedora júnior quero me desenvolver 
-                    como Full Stack. Moro no Brasil, falo inglês nível avançado/fluente, finalizei meu curso técnico de Informática
-                    integrado ao ensino médio na Etec em 2020, lá aprendi diversas linguagens de programação, além de análise de
-                    dados e realizei o meu TCC. 
-                    Em 2022 realizei o sonho de passar na Unesp, faço Bacharelado em Sistemas de Informação e estou no 
-                    quinto semestre (terceiro ano).
-                    Plus: Sou musicista e canto!
+                    About Me: I'm 21 years old, I'm a computer technician and junior developer looking to develop myself as a Full Stack. I live in Brazil, speak English at an advanced/fluent level, completed my technical course in Computer Science integrated with high school at Etec in 2020, where I learned several programming languages, as well as data analysis, and completed my TCC (final project). 
+                    In 2022, I realized the dream of getting into Unesp, where I am pursuing a Bachelor's degree in Information Systems and I'm in the fifth semester (third year).
+                    Plus: I'm a musician and I sing!
                 </p>
                 <br />
                 <p>
-                    Minhas especializações/Linguagens: C | C# | C++ | Java | HTML5 | Php | JavaScript | CSS | EntityFrameWorkCore. Pacote Office avançado.
+                    Programing Languages: C#, C, Java, JavaScript, and PHP.
+                    Database: Advanced MySQL.
+                    Specialization and experience with: .NET and Entity Framework Core.
+                    Basic knowledge in Azure.
+                    Experience with Web APIs.
+                    Experience with Networks, IIS.
+                    
                 </p>
             </div>
             <div class="pyramid-container">
@@ -154,48 +152,47 @@
         </div>
     </div>
 </section>
-<!-- sobre mim -->
+<!-- About Me -->
 
-<!-- Projetos -->
-    <section id="projetos">
-        <div class="centralizador projetos">
-            <h2 class="project">Projetos</h2>
-                <div class="projetos-itens">
-                    <div class="pro">
-                        <div class="breve"><p>EM BREVE</p></div>
-                    </div>
-                    <div class="pro">
-                        <div class="breve"><p>EM BREVE</p></div>
-                    </div>
-                    <div class="pro">
-                        <div class="breve"><p>EM BREVE</p></div>
-                    </div>
-                    <div class="pro escondido">
-                        <div class="breve"><p>EM BREVE</p></div>
-                    </div>
-                    <div class="pro escondido">
-                        <div class="breve"><p>EM BREVE</p></div>
-                    </div>
-                    <div class="pro escondido">
-                        <div class="breve"><p>EM BREVE</p></div>
-                    </div>
-                </div>
-
-                <div class="github-link">
-                <button id="botaoVerMais">Ver mais</button>
-                <button class="glow-on-hover" type="button" onclick="window.open('https://github.com/Najuzinh4?tab=repositories', '_blank')">Repositórios no GitHub</button>
+<!-- Projects -->
+<section id="projetos">
+    <div class="centralizador projetos">
+        <h2 class="project">Projetos</h2>
+        <div class="projetos-itens">
+            <div class="pro">
+                <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro">
+                <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro">
+                <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro escondido">
+                <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro escondido">
+                <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro escondido">
+                <div class="breve"><p>COMING SOON</p></div>
             </div>
         </div>
-    </section>
-<!-- Projetos -->
+        <div class="github-link">
+            <button id="botaoVerMais">See More</button>
+            <button class="glow-on-hover" type="button" onclick="window.open('https://github.com/Najuzinh4?tab=repositories', '_blank')">GitHub Repositories</button>
+        </div>
+    </div>
+</section>
+<!-- Projects -->
 
-<!-- Currículo -->
+<!-- Resume -->
 <section id="curriculo-section">
     <header>
-        <h2>Meu Currículo</h2>
+        <h2>My Resume</h2>
     </header>
     <article>
-        <p>Aqui está o meu currículo para download:</p>
+        <p>Here's my resume for download:</p>
     </article>
     <div class="relative duration-500 hover:-rotate-0 group [transform:rotate3d(1,-1,1,60deg)] border border-purple-900 border-4 overflow-hidden rounded-2xl relative h-96 w-64 bg-purple-800 p-5 flex flex-col items-center justify-center gap-4 mx-auto">
         <div class="text-gray-50 text-center">
@@ -213,10 +210,9 @@
         <svg class="group-hover:scale-125 duration-200 absolute -bottom-0.5 -right-20 w-48 h-48 z-10 -my-2 fill-gray-50 stroke-purple-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path data-name="layer1" d="M 50.4 51 C 40.5 49.1 40 46 40 44 v -1.2 a 18.9 18.9 0 0 0 5.7 -8.8 h 0.1 c 3 0 3.8 -6.3 3.8 -7.3 s 0.1 -4.7 -3 -4.7 C 53 4 30 0 22.3 6 c -5.4 0 -5.9 8 -3.9 16 c -3.1 0 -3 3.8 -3 4.7 s 0.7 7.3 3.8 7.3 c 1 3.6 2.3 6.9 4.7 9 v 1.2 c 0 2 0.5 5 -9.5 6.8 S 2 62 2 62 h 60 a 14.6 14.6 0 0 0 -11.6 -11 z" stroke-miterlimit="10" stroke-width="2"></path></svg>
     </div>
 </section>
+<!-- Resume -->
 
-<!-- Currículo -->
-
-<!-- Habilidades -->
+<!-- Skills -->
 <section id="habilidades">
     <div class="centralizador">
         <div class="habilidades-pd">
@@ -283,24 +279,22 @@
                 </div>
                 <div class="conteiner-descricao">
                     <p class="texto-descricao">
-                         Passe o mouse por cima de alguma
-                        habilidade para ler a descrição :)
+                        Hover over a skill to read its description :)
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Habilidades -->
+<!-- Skills -->
 
-
- <!-- footer -->
- <footer class="footer">
+<!-- footer -->
+<footer class="footer">
     <div class="footer-conteiner">
         <div class="contato-creditos">
-            E-mail para contato: ana.jr.gaspar@gmail.com
+            Email para contato: ana.jr.gaspar@gmail.com
             <br />
-          Feito por Ana Júlia Rocha Gaspar
+            Feito por Ana Júlia Rocha Gaspar
         </div>
         <div class="icons">
             <div class="links links1">
@@ -329,9 +323,6 @@
             </div>
         </div>
     </div>
-</main>
-
-</body>
 </footer>
 <!-- footer -->
 </div>

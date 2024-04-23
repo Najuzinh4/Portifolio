@@ -30,9 +30,34 @@ img {
     display: block;
 }
 
+.logo img {
+    max-width: 100%;
+    display: block;
+    height: auto; 
+}
+
 .logo {
     padding: 15px 0;
+    width: 40%; 
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
+
+
+
+.bandeira {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bandeira img {
+    max-width: 30%;
+    display: block;
+    height: auto;
+}
+
 
 .barra {
     width: 100%;
@@ -239,12 +264,6 @@ img {
         margin: 0;
     }
 
-    .logo {
-        margin-top: 25px;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
     .barra{
         height: 100vh;
         display: flex;
@@ -278,7 +297,7 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
     }
 
     .direita ul a {

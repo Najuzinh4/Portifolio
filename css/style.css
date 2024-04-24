@@ -44,15 +44,20 @@ img {
     justify-content: center;
 }
 
-
-
-.bandeira {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
+.logo-esquerda {
+    position: absolute;
+    left: 0;
 }
 
-.bandeira img {
+
+
+
+.bandeira-direita {
+    width: 30%;
+
+}
+
+.bandeira-direita img {
     max-width: 30%;
     display: block;
     height: auto;
@@ -71,9 +76,10 @@ img {
 
 .barra-conteiner {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .centralizador {
@@ -217,9 +223,7 @@ img {
         margin-left: 15px;
     }
 
-    .direita {
-        margin-right: 15px;
-    }
+
 
 }
 

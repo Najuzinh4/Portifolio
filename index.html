@@ -30,47 +30,41 @@
     
 
 
-    <body onload="typeWriter(fName);">
-        <div>
-            <!-- menu -->
-            <input
-                id="close-menu"
-                class="close-menu"
-                type="checkbox"
-                aria-label="close-menu"
-                role="button"
-            />
-            <label
-                class="close-menu-label"
-                for="close-menu"
-                title="close menu"
-            ></label>
-            <div class="barra">
-                <div class="menu-centro">
-                    <div class="barra-conteiner centralizador">
-                        <div class="logo esquerda">
-                            <a href="index.html"
-                                ><img src="data:image/png;base64,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" alt="logo"
-                            /></a>
-                        </div>
-                        <div class="bandeira direita">
-                            <li><a href="/en-index.html"><img src="/img/icon_flag.png" alt="English Flag"></a></li>
-                        </div>
-                        <nav class="direita">
-                            <ul
-                                onclick="getElementById('close-menu').checked=false;"
-                            >
-                                <li><a href="#inicio">Início</a></li>
-                                <li><a href="#sobre-mim">Sobre mim</a></li>
-                                <li><a href="#projetos">Projetos</a></li>
-                                <li><a href="#curriculo-section">Currículo</a></li>
-                                <li><a href="#habilidades">Habilidades</a></li>
-                            </ul>
-                        </nav>
+   
+<body onload="typeWriter(fName);">
+    <div>
+        <!-- menu -->
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+        <div class="barra">
+            <div class="menu-centro">
+                <div class="barra-conteiner centralizador">
+                    <div class="logo-esquerda">
+                        <a href="index.html"><img
+                                src="data:image/png;base64,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"
+                                alt="logo" /></a>
                     </div>
+
+
+                    <nav class="direita">
+                        <ul onclick="getElementById('close-menu').checked=false;">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre-mim">Sobre mim</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#curriculo-section">Currículo</a></li>
+                            <li><a href="#habilidades">Habilidades</a></li>
+                        </ul>
+                    </nav>
+                    <div class="bandeira-direita">
+                        <li><a href="/en-index.html"><img src="/img/icon_flag.png" alt="English Flag"></a></li>
+                    </div>
+
                 </div>
+
             </div>
-            <!-- menu -->
+
+        </div>
+        <!-- menu -->
                 
    <!-- primeira tela -->
    <section id="inicio">

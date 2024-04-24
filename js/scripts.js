@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('downloadButton').onclick = function() {
   // Cria um elemento <a> para o download
   var link = document.createElement('a');
-  link.href = './ANA JÚLIA ROCHA GASPAR.pdf'; 
-  link.download = 'ANA JÚLIA ROCHA GASPAR.pdf'; 
+  link.href = '/Ana Julia Gaspar - Curriculo.pdf'; 
+  link.download = 'Ana Julia Gaspar - Curriculo.pdf'; 
   link.click();
 }

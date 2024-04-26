@@ -6,15 +6,28 @@ const node = document.querySelector('#fundo')
 meuNome.innerHTML='';
 
 function cliqueVer (e) {
+    const isEnIndex = window.location.pathname.includes('en-index');
     habilidades.forEach( (elemento) => {
         if (elemento.classList.contains('escondido')) {
             elemento.classList.remove('escondido');
             elemento.classList.add('visivel');
-            botaoVerMais.innerHTML = 'Ver menos';
+
+
+            if (isEnIndex){
+                botaoVerMais.innerHTML = 'See Less';
+            } else {
+                botaoVerMais.innerHTML = 'Ver menos';
+            }
+
         } else {
             elemento.classList.add('escondido');
             elemento.classList.remove('visivel');
-            botaoVerMais.innerHTML = 'Ver mais';
+
+            if (isEnIndex){
+                botaoVerMais.innerHTML = 'See More';
+            } else {
+                botaoVerMais.innerHTML = 'Ver mais';
+            }
         }
     } )
 }

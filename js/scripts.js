@@ -21,11 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
       projeto.classList.toggle('escondido');
     });
 
+    // Verifica se está no en-index
+    const isEnIndex = window.location.pathname.includes('en-index');
+
     // Muda o texto do botão para refletir se os projetos estão visíveis ou não
-    const buttonText = verMaisButton.textContent === 'Ver mais' ? 'Ver menos' : 'Ver mais';
+    let buttonText = '';
+    if (isEnIndex) {
+      buttonText = verMaisButton.textContent === 'See more' ? 'See less' : 'See more';
+    } else {
+      buttonText = verMaisButton.textContent === 'Ver mais' ? 'Ver menos' : 'Ver mais';
+    }
+
     verMaisButton.textContent = buttonText;
   });
 });
+
 
 
 

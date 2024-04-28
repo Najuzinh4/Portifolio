@@ -1,13 +1,13 @@
-window.sr = ScrollReveal({ reset:true});
-ScrollReveal({ distance: '15px' });
-sr.reveal('.desenho', {duration : 3000, origin: 'right'})
-sr.reveal('.descricao', {duration : 3000, origin: 'left'})
-sr.reveal('.linkedin', {duration : 3000,  origin: 'left'})
-sr.reveal('.projetos-itens', {duration : 3000, origin:'bottom'})
-sr.reveal('.project', {duration : 3000, origin:'bottom'})
-sr.reveal('.github-link', {duration : 3000, origin:'bottom'})
-sr.reveal('.conteiner-skills', {duration : 3000, origin:'left'})
-sr.reveal('.conteiner-descricao', {duration : 3000, origin:'right'})
+// window.sr = ScrollReveal({ reset:true});
+// ScrollReveal({ distance: '15px' });
+// sr.reveal('.desenho', {duration : 3000, origin: 'right'})
+// sr.reveal('.descricao', {duration : 3000, origin: 'left'})
+// sr.reveal('.linkedin', {duration : 3000,  origin: 'left'})
+// sr.reveal('.projetos-itens', {duration : 3000, origin:'bottom'})
+// sr.reveal('.project', {duration : 3000, origin:'bottom'})
+// sr.reveal('.github-link', {duration : 3000, origin:'bottom'})
+// sr.reveal('.conteiner-skills', {duration : 3000, origin:'left'})
+// sr.reveal('.conteiner-descricao', {duration : 3000, origin:'right'})
 
 document.addEventListener('DOMContentLoaded', function () {
   // Espera o DOM ser totalmente carregado
@@ -37,12 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  var downloadButton = document.getElementById('downloadButton');
+  // console.log(downloadButton)
+  // debugger
+  if (downloadButton) {
+    downloadButton.addEventListener('click', function() {
+      var link = document.createElement('a');
+      link.href = './Ana Julia Gaspar - Curriculo'; 
+      link.download = 'Ana Julia Gaspar - Curriculo.pdf'; 
+      link.click();
+    });
+  }
+});
 
 
-document.getElementById('downloadButton').onclick = function() {
-  // Cria um elemento <a> para o download
-  var link = document.createElement('a');
-  link.href = '/Ana Julia Gaspar - Curriculo.pdf'; 
-  link.download = 'Ana Julia Gaspar - Curriculo.pdf'; 
-  link.click();
-}

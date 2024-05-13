@@ -48,8 +48,18 @@ skills.forEach((elemento, index) => {
             isEnIndex ? aboutSkills[index1] : sobreSkill[index1]
         } </p>`;
     });
+
+
+
+
     elemento.addEventListener('mouseout', (evento, elemento) => {
-        descricao.innerHTML =
+        if (isEnIndex){
+            descricao.innerHTML =
             'Passe o mouse por cima de alguma habilidade para ler a descrição :)';
+        }
+        else {
+            'Hover over a skill to read the description :)';
+        }
+       
     });
 });

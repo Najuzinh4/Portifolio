@@ -32,8 +32,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById('downloadButton').addEventListener('click', () => {
-  var link = document.createElement('a');
-  link.href = './Ana Julia Gaspar - Curriculo.pdf';
-  link.download = `Ana Julia Gaspar - Curriculo.pdf`;
-  link.click();
+    const isEnIndex = window.location.pathname.includes('en-index');
+    console.log ('alouuuuu');
+    if (isEnIndex){
+        var link = document.createElement('a');
+        link.href = './Ana Julia Gaspar - resume.pdf';
+        link.download = `Ana Julia Gaspar - resume.pdf`;
+        link.click();
+    }
+    else {
+        var link = document.createElement('a');
+        link.href = './Ana Julia Gaspar - Curriculo.pdf';
+        link.download = `Ana Julia Gaspar - Curriculo.pdf`;
+        link.click();
+    }
+ 
 });
